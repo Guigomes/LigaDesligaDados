@@ -1,0 +1,54 @@
+<ScrollView android:layout_height="fill_parent" android:layout_width="fill_parent"  xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout 
+   
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    
+    >
+ 
+ <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_margin="20sp" android:orientation="vertical" android:background="#00a3e0">      
+ <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="@string/msg_agendamento_sms" android:textColor="#FFFFFF" android:textSize="16sp" android:textStyle="bold" android:gravity="center"/>
+  			</LinearLayout>
+<EditText  android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textMultiLine"  android:id="@+id/txtArea_mensagem" android:lines="4"/>
+
+ <RadioGroup 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" android:gravity="center" android:layout_gravity="center">
+    <RadioButton android:id="@+id/radio_ligar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ligar_dados"
+        android:onClick="onRadioButtonClickedAcao"/>
+    <RadioButton android:id="@+id/radio_desligar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desligar_dados"
+        android:onClick="onRadioButtonClickedAcao" android:checked="true" android:focusable="true">
+        
+        </RadioButton>
+</RadioGroup>
+
+  <RadioGroup  android:layout_gravity="center" android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RadioButton android:id="@+id/radio_umaVez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/uma_vez"
+        android:onClick="onRadioButtonClickedFrequencia" android:checked="true"/>
+    <RadioButton android:id="@+id/radio_diariamente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sempre"
+        android:onClick="onRadioButtonClickedFrequencia"/>
+  
+</RadioGroup>
+<CheckBox  android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="@string/pergunta_notificao" android:id="@+id/chkNoti"/>
+<Button android:layout_width="fill_parent" android:layout_height="wrap_content"	android:onClick="salvarMensagem" android:text="@string/salvar" android:background="@drawable/btn_selector" style="@style/ButtonText"/>
+
+</LinearLayout>
+</ScrollView>

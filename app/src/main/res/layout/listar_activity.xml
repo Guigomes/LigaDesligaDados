@@ -1,0 +1,41 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:id="@+id/bannerLayout"
+    >
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+    <Button android:layout_height="50sp" android:layout_width="fill_parent" android:layout_weight="1" android:text="@string/por_data"  android:background="@color/azul" android:onClick="porData" android:id="@+id/porData" style="?android:attr/buttonBarButtonStyle" />
+    <Button android:layout_height="50sp" android:layout_width="fill_parent" android:layout_weight="1" android:text="@string/por_mensagem" android:background="@android:color/darker_gray" android:onClick="porMensagem"  android:id="@+id/porMensagem" style="?android:attr/buttonBarButtonStyle" />    
+</LinearLayout>
+    <TextView android:id="@+id/empty"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:paddingTop="30sp"        
+        android:textColor="?android:textColorSecondary" 
+        android:visibility="gone"
+        />
+  
+     
+    
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        
+        <LinearLayout android:id="@+id/container" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" 
+            android:animateLayoutChanges="true"
+            />
+
+    </ScrollView>
+
+
+</LinearLayout>

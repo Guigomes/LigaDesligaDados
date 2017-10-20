@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bannerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.desligadados.activitys.MenuPrincipalActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/data"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:focusable="false"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_ligar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClickedAcao"
+            android:text="@string/ligar_dados" />
+
+        <RadioButton
+            android:id="@+id/radio_desligar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:focusable="true"
+            android:onClick="onRadioButtonClickedAcao"
+            android:text="@string/desligar_dados" >
+        </RadioButton>
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_umaVez"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onRadioButtonClickedFrequencia"
+            android:text="@string/uma_vez" />
+
+        <RadioButton
+            android:id="@+id/radio_diariamente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClickedFrequencia"
+            android:text="@string/diariamente" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkNoti"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/pergunta_notificao"
+        android:textSize="14sp" 
+        />
+        
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnAgendar"
+                style="@style/ButtonText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_selector"
+                android:onClick="agendar"
+                android:text="@string/agendar" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    style="@style/ButtonTextMenor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_selector"
+                    android:onClick="listar"
+                    android:text="@string/meus_agendamentos" />
+
+                <Button
+                    style="@style/ButtonTextMenor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_selector"
+                    android:onClick="agendarSms"
+                    android:text="@string/agendamento_por_sms" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

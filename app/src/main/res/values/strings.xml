@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Liga/Desliga Dados</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_configurar_mensagem">ActivityConfigurarMensagem</string>
+    <string name="title_activity_action_bar_tabs">ActionBarTabs</string>
+    <string name="demo_external_activity">Demo External Activity</string>
+    <string name="demo_collection">Demo Collection</string>
+    <string name="title_activity_main">Liga/Desliga Dados</string>
+    <string name="vazio"></string>
+    <string name="ligar_dados">Ligar Dados</string>
+    <string name="desligar_dados">Desligar Dados</string>
+    <string name="uma_vez">Uma Vez</string>
+    <string name="sempre">Sempre</string>
+    <string name="msg_agendamento_sms">Esse alarme será acionado quando você receber um sms com a mensagem salva. \nSugestão: salve a mensagem que recebe da sua operado quando seus plano de dados acaba.</string>
+    <string name="pergunta_notificao">Quero ser avisado quando minha conexão de dados for mudada</string>
+    <string name="salvar">Salvar Alarme por SMS</string>
+    <string name="mensagem">Mensagem</string>
+    <string name="deletar">Deletar</string>
+    <string name="imgTitulo">imagem do título</string>
+    <string name="ver_mensagem">Ver Mensagem</string>
+    <string name="por_data">Por Data</string>
+    <string name="por_mensagem">Por SMS</string>
+    <string name="fechar">Fechar</string>
+    <string name="novo_agendamento">Novo Agendamento</string>
+    <string name="meus_agendamentos">Meus Alarmes</string>
+    <string name="agendamento_por_sms">Alarme por SMS</string>
+    <string name="data">Data</string>
+    <string name="diariamente">Diariamente</string>
+    <string name="agendar">Agendar Novo Alarme</string>
+    <string name="msg_salvo">Alarme salvo com sucesso</string>
+    <string name="erro_msg">Por favor, informe uma mensagem</string>
+    <string name="msg_sem_agendamentos">Não existem alarmes programados</string>
+    <string name="title_agendamentos">Alarme de Dados</string>
+    <string name="erro_alarme_passado">Por favor, não agende uma data no passado.</string>
+    <string name="foi_agendado_para">Foi agendado para</string>
+    <string name="as">às</string>
+    <string name="erro_alarme_repetido">Já existe um alarme programado para este horário</string>
+    <string name="msg_ligada">A sua conexão de dados foi ligada</string>
+    <string name="msg_desligada">A sua conexão de dados foi desligada</string>
+    <string name="alarme_dados">Alarme de dados</string>
+    <string name="msg_vazio">Você não tem nenhum alarme criado</string>
+    <string name="no_dia">no dia</string>
+
+</resources>

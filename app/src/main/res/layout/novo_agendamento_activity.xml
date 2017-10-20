@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.calculadora.MainActivity"
+    tools:ignore="MergeRootFrame" 
+	android:layout_margin="6dp"    
+    >
+   
+    
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingBottom="40sp" android:orientation="horizontal">        
+    <TextView android:text="@string/data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:textSize="16sp"/>
+    <EditText android:id="@+id/edtData" android:layout_width="0dp" android:layout_height="wrap_content"  android:gravity="center" android:layout_weight="1" android:inputType="text"/>
+    </LinearLayout>
+        
+    
+        
+
+  <TimePicker
+      android:id="@+id/timePicker1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+  
+  
+  <RadioGroup 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" android:gravity="center" android:layout_gravity="center">
+    <RadioButton android:id="@+id/radio_ligar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ligar_dados"
+        android:onClick="onRadioButtonClickedAcao"/>
+    <RadioButton android:id="@+id/radio_desligar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desligar_dados"
+        android:onClick="onRadioButtonClickedAcao" android:checked="true" android:focusable="true">
+        
+        </RadioButton>
+</RadioGroup>
+
+  <RadioGroup  android:layout_gravity="center" android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RadioButton android:id="@+id/radio_umaVez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/uma_vez"
+        android:onClick="onRadioButtonClickedFrequencia" android:checked="true"/>
+    <RadioButton android:id="@+id/radio_diariamente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/diariamente"
+        android:onClick="onRadioButtonClickedFrequencia"/>
+  
+</RadioGroup>
+
+  <CheckBox  android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="@string/pergunta_notificao" android:id="@+id/chkNoti"/>
+  <Button android:id="@+id/btnAgendar" android:onClick="agendar" android:text="@string/agendar" android:background="@drawable/btn_selector" android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/ButtonText"/>
+  
+
+  
+  </LinearLayout>
